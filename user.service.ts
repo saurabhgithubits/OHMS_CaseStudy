@@ -19,7 +19,7 @@ public addUser(user:User){
 
 // user Login
 login(loginData: User){
- return this.http.post(`${baseUrl}/users/login`,loginData);
+ return this.http.post(`${baseUrl}/`,loginData);
 }
 
 
