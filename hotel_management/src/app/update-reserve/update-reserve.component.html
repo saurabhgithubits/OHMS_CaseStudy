@@ -1,0 +1,45 @@
+<div class="col-md-6 offset-md-3">
+    <h3> ReserveGuest </h3>
+    <form  (ngSubmit) = "onSubmit()">
+      
+        
+        <div class="form-group">
+            <label>Number_of_Adults</label>
+            <input type="text" class ="form-control" id = "adult"
+                [(ngModel)] = "reserve.no_of_Adult" name = "adult">
+        </div>
+
+        <div class="form-group">
+            <label> Number_of_Children</label>
+            <input type="text" class ="form-control" id = "child"
+            [(ngModel)] = "reserve.no_of_child" name = "child">
+        </div>
+
+     
+        <div class="form-group">
+            <label>Check_in_date</label>
+            <input type="text" class ="form-control" id = "indate"
+                [(ngModel)] = "reserve.check_in_date" name = "indate">
+        </div>
+    
+        <div class="form-group">
+            <label>checkout_date</label>
+            <input type="text" class ="form-control" id = "outdate"
+                [(ngModel)] = "reserve.checkout_date" name = "outdate">
+        </div>
+    
+        <div class="form-group">
+            <label> Status</label>
+            <input type="text" class ="form-control" id = "status"
+                [(ngModel)] = "reserve.Status" name = "status">
+        </div>
+        <div class="form-group">
+            <label> Number_of_Nights</label>
+            <input type="text" class ="form-control" id = "no_of_nights"
+                [(ngModel)] = "reserve.Number_of_Nights" name = "no_of_nights">
+        </div>
+    
+        <button  class = "btn btn-success"  type ="submit">Submit</button>
+    
+    </form>
+    </div> 

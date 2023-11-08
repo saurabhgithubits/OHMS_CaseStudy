@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="container text-center">
+                <img src="/assets/f.jpg" width="200px" height="200px" alt="">
+            </div>
+            <h1 class="text-center">Register</h1>
+            <form #userForm="ngForm" (ngSubmit)="register()">
+                <!-- <div class="form-group">
+                    <label for=""><b>User Name</b></label>
+                    <input type="text" required #userName="ngModel"
+                    [class.is-invalid]="userName.invalid && userName.touched" class="form-control" name="userName" [(ngModel)]="user.username">
+                    <small class="text-danger" [class.d-none]="userName.valid || userName.untouched">User name require</small>
+                </div> -->
+                <div class="form-group">
+                    <label for=""><b>First Name</b></label>
+                    <input type="text" required #firstName="ngModel"
+                    [class.is-invalid]="firstName.invalid && firstName.touched" class="form-control" name="firstName" [(ngModel)]="user.firstName">
+                    <small class="text-danger" [class.d-none]="firstName.valid || firstName.untouched">First name require</small>
+                </div>
+                <div class="form-group">
+                    <label for=""><b>last Name</b></label>
+                    <input type="text" required #lastName="ngModel"
+                    [class.is-invalid]="lastName.invalid && lastName.touched" class="form-control" name="lastName" [(ngModel)]="user.lastName">
+                    <small class="text-danger" [class.d-none]="lastName.valid || lastName.untouched">Last name require</small>
+                </div>
+                <div class="form-group">
+                    <label for=""><b>Password</b></label>
+                    <input type="password" required #pass="ngModel"
+                    [class.is-invalid]="pass.invalid && pass.touched" class="form-control" name="password" [(ngModel)]="user.password">
+                    <small class="text-danger" [class.d-none]="pass.valid || pass.untouched">Password name require</small>
+                </div>
+                <div class="form-group">
+                    <label for=""><b>Email</b></label>
+                    <input type="text" required #Email="ngModel"
+                    [class.is-invalid]="Email.invalid && Email.touched" class="form-control" name="Email" [(ngModel)]="user.email">
+                    <small class="text-danger" [class.d-none]="Email.valid || Email.untouched">Email require</small>
+                </div>
+                 <!-- <div class="form-group">
+                    <label for="dropdown"><b>Role</b></label>
+                    <select id="dropdown" required #role="ngModel"
+                    [class.is-invalid]="role.invalid && role.touched" class="form-control" name="role" [(ngModel)]="user.role">
+                        
+                        <option value="option2"></option>
+                        <option value="option3">MANAGER</option>
+                        <option value="option4">RECEPTIONIST</option>
+                    </select>
+                    <small class="text-danger" [class.d-none]="role.valid || role.untouched">Role is require</small>
+                </div>                -->
+                <!--<div class="form-group">
+                    <label for=""><b>Address</b></label>
+                    <input type="text" required #address="ngModel"
+                    [class.is-invalid]="address.invalid && address.touched" class="form-control" name="address" [(ngModel)]="user.address">
+                    <small class="text-danger" [class.d-none]="address.valid || address.untouched">Address name require</small>
+                </div> -->
+                <div class="form-group" style="margin-top: 20px; text-align:center ;">
+                    <button [disabled]="userForm.form.invalid" class="btn btn-primary" type="submit">Register</button>
+                    <a href="" routerLink="/login" style="margin-left: 10px;"><button  class="btn btn-primary" type="submit">Login</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
